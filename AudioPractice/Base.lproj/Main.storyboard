@@ -1,25 +1,117 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="backgroundIMG.png" translatesAutoresizingMaskIntoConstraints="NO" id="lYz-3r-phz">
+                                <rect key="frame" x="0.0" y="-7" width="375" height="674"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TY-3B-dKc">
+                                <rect key="frame" x="87" y="582" width="50" height="30"/>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7IT-rY-KDu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNm-2o-DEs">
+                                <rect key="frame" x="89" y="83" width="70" height="30"/>
+                                <state key="normal" title="Authentic "/>
+                                <connections>
+                                    <action selector="authenticOneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRH-hP-C7i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSI-4A-bgK">
+                                <rect key="frame" x="20" y="390" width="335" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7L-0t-BI8">
+                                <rect key="frame" x="236" y="83" width="70" height="30"/>
+                                <state key="normal" title="Authentic "/>
+                                <connections>
+                                    <action selector="authenticTwoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IFG-cX-jYr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6k-Bq-OzF">
+                                <rect key="frame" x="226" y="175" width="91" height="30"/>
+                                <state key="normal" title="Questionable"/>
+                                <connections>
+                                    <action selector="questionableButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tyx-62-f5g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gk9-ak-M8n">
+                                <rect key="frame" x="184" y="582" width="42" height="30"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gwc-jv-Teg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNC-9D-Gom">
+                                <rect key="frame" x="273" y="582" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopMusicButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ee-Ad-VW0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2k-n0-uPv">
+                                <rect key="frame" x="73" y="175" width="78" height="30"/>
+                                <state key="normal" title="Acceptable"/>
+                                <connections>
+                                    <action selector="acceptableButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPy-ZU-ZgH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Di1-o1-sMR">
+                                <rect key="frame" x="133" y="138" width="109" height="30"/>
+                                <state key="normal" title="My Happy Song"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyU-9D-OH3" userLabel="mainLabel">
+                                <rect key="frame" x="78" y="261" width="218" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lYz-3r-phz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="UXY-KT-x3e"/>
+                            <constraint firstItem="lYz-3r-phz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="i2v-wI-Fzr"/>
+                            <constraint firstItem="lYz-3r-phz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nHH-Zl-m6I"/>
+                            <constraint firstItem="lYz-3r-phz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ouC-yD-OwN"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="acceptableButton" destination="D2k-n0-uPv" id="aNl-dq-pq5"/>
+                        <outlet property="authentic1Button" destination="kNm-2o-DEs" id="OIr-ZL-qPl"/>
+                        <outlet property="authentic2Button" destination="r7L-0t-BI8" id="g9J-cx-qo3"/>
+                        <outlet property="happySongButton" destination="Di1-o1-sMR" id="dO4-4V-gZd"/>
+                        <outlet property="mainLabel" destination="yyU-9D-OH3" id="7we-MM-VGh"/>
+                        <outlet property="pausePlay" destination="gk9-ak-M8n" id="UVB-xE-UE7"/>
+                        <outlet property="questionableButton" destination="Q6k-Bq-OzF" id="QTH-ZT-8hw"/>
+                        <outlet property="songTitleLabel" destination="cSI-4A-bgK" id="2az-Dw-5lC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="167.5" y="464.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backgroundIMG.png" width="800" height="800"/>
+    </resources>
 </document>

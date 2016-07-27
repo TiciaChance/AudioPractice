@@ -14,6 +14,12 @@
 		11C819051D478DEA00639222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C819031D478DEA00639222 /* LaunchScreen.storyboard */; };
 		11C819101D478DEA00639222 /* AudioPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8190F1D478DEA00639222 /* AudioPracticeTests.swift */; };
 		11C8191B1D478DEA00639222 /* AudioPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8191A1D478DEA00639222 /* AudioPracticeUITests.swift */; };
+		11EAE4571D47A1800007B852 /* backgroundIMG.png in Resources */ = {isa = PBXBuildFile; fileRef = 11EAE4561D47A1800007B852 /* backgroundIMG.png */; };
+		11EAE4591D47A32F0007B852 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EAE4581D47A32F0007B852 /* AVFoundation.framework */; };
+		11EAE45B1D47AB760007B852 /* Work.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 11EAE45A1D47AB760007B852 /* Work.mp3 */; };
+		11EAE45E1D47AD840007B852 /* TrenchTownRock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 11EAE45D1D47AD840007B852 /* TrenchTownRock.mp3 */; };
+		11EAE4601D47AF1B0007B852 /* OneDance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 11EAE45F1D47AF1B0007B852 /* OneDance.mp3 */; };
+		11EAE4621D47AF780007B852 /* Champion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 11EAE4611D47AF780007B852 /* Champion.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		11C819161D478DEA00639222 /* AudioPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C8191A1D478DEA00639222 /* AudioPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPracticeUITests.swift; sourceTree = "<group>"; };
 		11C8191C1D478DEA00639222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11EAE4561D47A1800007B852 /* backgroundIMG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundIMG.png; sourceTree = "<group>"; };
+		11EAE4581D47A32F0007B852 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		11EAE45A1D47AB760007B852 /* Work.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Work.mp3; sourceTree = "<group>"; };
+		11EAE45D1D47AD840007B852 /* TrenchTownRock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TrenchTownRock.mp3; sourceTree = "<group>"; };
+		11EAE45F1D47AF1B0007B852 /* OneDance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OneDance.mp3; sourceTree = "<group>"; };
+		11EAE4611D47AF780007B852 /* Champion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Champion.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EAE4591D47A32F0007B852 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 		11C818EE1D478DE900639222 = {
 			isa = PBXGroup;
 			children = (
+				11EAE4581D47A32F0007B852 /* AVFoundation.framework */,
 				11C818F91D478DE900639222 /* AudioPractice */,
 				11C8190E1D478DEA00639222 /* AudioPracticeTests */,
 				11C819191D478DEA00639222 /* AudioPracticeUITests */,
@@ -102,7 +116,9 @@
 				11C818FE1D478DEA00639222 /* Main.storyboard */,
 				11C819011D478DEA00639222 /* Assets.xcassets */,
 				11C819031D478DEA00639222 /* LaunchScreen.storyboard */,
+				11EAE4561D47A1800007B852 /* backgroundIMG.png */,
 				11C819061D478DEA00639222 /* Info.plist */,
+				11EAE45C1D47AB7D0007B852 /* AudioFiles  */,
 			);
 			path = AudioPractice;
 			sourceTree = "<group>";
@@ -123,6 +139,17 @@
 				11C8191C1D478DEA00639222 /* Info.plist */,
 			);
 			path = AudioPracticeUITests;
+			sourceTree = "<group>";
+		};
+		11EAE45C1D47AB7D0007B852 /* AudioFiles  */ = {
+			isa = PBXGroup;
+			children = (
+				11EAE45D1D47AD840007B852 /* TrenchTownRock.mp3 */,
+				11EAE4611D47AF780007B852 /* Champion.mp3 */,
+				11EAE45F1D47AF1B0007B852 /* OneDance.mp3 */,
+				11EAE45A1D47AB760007B852 /* Work.mp3 */,
+			);
+			name = "AudioFiles ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +256,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EAE45E1D47AD840007B852 /* TrenchTownRock.mp3 in Resources */,
 				11C819051D478DEA00639222 /* LaunchScreen.storyboard in Resources */,
+				11EAE45B1D47AB760007B852 /* Work.mp3 in Resources */,
+				11EAE4571D47A1800007B852 /* backgroundIMG.png in Resources */,
+				11EAE4601D47AF1B0007B852 /* OneDance.mp3 in Resources */,
+				11EAE4621D47AF780007B852 /* Champion.mp3 in Resources */,
 				11C819021D478DEA00639222 /* Assets.xcassets in Resources */,
 				11C819001D478DEA00639222 /* Main.storyboard in Resources */,
 			);
@@ -484,6 +516,7 @@
 				11C819211D478DEA00639222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11C819221D478DEA00639222 /* Build configuration list for PBXNativeTarget "AudioPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +525,7 @@
 				11C819241D478DEA00639222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11C819251D478DEA00639222 /* Build configuration list for PBXNativeTarget "AudioPracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +534,7 @@
 				11C819271D478DEA00639222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
